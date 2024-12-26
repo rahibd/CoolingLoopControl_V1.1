@@ -1,0 +1,37 @@
+Running main() from C:\Users\DELL\projects\CoolingLoopControl_V1.1\googletest\googletest\src\gtest_main.cc
+[==========] Running 3 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 1 test from PIDControllerTest
+[ RUN      ] PIDControllerTest.Compute
+C:\Users\DELL\projects\CoolingLoopControl_V1.1\tests\CoolingLoopControlTest.cpp(9): error: The difference between pid.compute(50.0, 50.0) and 0.0 is 0.44999998807907104, which exceeds 0.1, where
+pid.compute(50.0, 50.0) evaluates to 0.44999998807907104,
+0.0 evaluates to 0, and
+0.1 evaluates to 0.10000000000000001.
+
+[  FAILED  ] PIDControllerTest.Compute (0 ms)
+[----------] 1 test from PIDControllerTest (1 ms total)
+
+[----------] 1 test from InterpolateTemperatureTest
+[ RUN      ] InterpolateTemperatureTest.VoltageToTemperature
+C:\Users\DELL\projects\CoolingLoopControl_V1.1\tests\CoolingLoopControlTest.cpp(14): error: Expected equality of these values:
+  interpolateTemperature(4.771f)
+    Which is: -10
+  -20.0
+    Which is: -20
+
+[  FAILED  ] InterpolateTemperatureTest.VoltageToTemperature (0 ms)
+[----------] 1 test from InterpolateTemperatureTest (0 ms total)
+
+[----------] 1 test from ControlPumpTest
+[ RUN      ] ControlPumpTest.SpeedOutput
+[       OK ] ControlPumpTest.SpeedOutput (1 ms)
+[----------] 1 test from ControlPumpTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 3 tests from 3 test suites ran. (3 ms total)
+[  PASSED  ] 1 test.
+[  FAILED  ] 2 tests, listed below:
+[  FAILED  ] PIDControllerTest.Compute
+[  FAILED  ] InterpolateTemperatureTest.VoltageToTemperature
+
+ 2 FAILED TESTS
