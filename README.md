@@ -46,33 +46,33 @@ C++ programming with Visual Studio Code.
 To rebuild the project with the source file located at /workspaces/Cooling-Loop/CoolingLoopControl_V1.1/src/CoolingLoopControl_V1.1.cpp, follow these steps:
 Steps to Build
 
-    Navigate to Your Workspace: Open the terminal in GitHub Codespaces and move to your project directory:
+Navigate to Your Workspace: Open the terminal in GitHub Codespaces and move to your project directory:
 
-cd /workspaces/Cooling-Loop/CoolingLoopControl_V1.1
+    cd /workspaces/Cooling-Loop/CoolingLoopControl_V1.1
 
 Clean the Previous Build: Remove the old build directory if it exists to start fresh:
 
-rm -rf build
+    rm -rf build
 
 Create a Build Directory: Create a new directory for build files:
 
-mkdir build
-cd build
+    mkdir build
+    cd build
 
 Run CMake: Generate the build system:
 
-cmake ..
+    cmake ..
 
 Compile the Project: Build the project using the generated Makefiles:
 
-make
+    make
 
 Run the Built Executables: After the build completes, run the executables:
 
-    Main Application:
+Main Application:
 
-./CoolingLoopControl
+    ./CoolingLoopControl
 
 Unit Tests:
 
-./CoolingLoopControlTest
+    ./CoolingLoopControlTest
